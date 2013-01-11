@@ -79,28 +79,32 @@ ddsmoothmenu.init({
         <?php include "user_template/sidebar.php";?>
         
         <div id="content">
+
         	<div id="templatemo_search">
                 <form action="#" method="get">
                   <input type="text" value="Search" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
                   <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
                 </form>
+		
             </div>
 			<br>
+			
             <h2>Latest News</h2>
-       
-        <blockquote>
-		 <h4>Nama News</h4>
-		 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit quis nulla id orci malesua.
-        </blockquote>
-		<br>
-		
-		<h2>Popular News</h2>
-       
-        <blockquote>
-		 <h4>Nama News</h4>
-		 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit quis nulla id orci malesua.
-        </blockquote>
-            
+       <div class="pagination">	<?php echo $pagination; ?></div>
+		 <?php foreach($query as $row): ?>
+			<blockquote> 
+	      <h4> <?=$row->title?></h4>
+			<? 
+			if (strlen($row->text)>130){
+			echo "".substr($row->text,0,130)."...";
+			}else{
+			echo "". $row->text." ";
+			}
+			?>
+			<div id=readmore><a href="<?=base_url()?>index.php/news_user/view/<?=$row->id;?>">Read More</a></div>
+			</blockquote>
+		 <?php endforeach;?>
+            		
         </div> <!-- END of content -->
         <div class="cleaner"></div>
     </div> <!-- END of main -->
