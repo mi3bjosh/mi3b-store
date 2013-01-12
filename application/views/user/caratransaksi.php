@@ -65,7 +65,7 @@ ddsmoothmenu.init({
             <li><?php echo anchor('ecommerce/produk', 'Produk' );?></li>
             <li><?php echo anchor('ecommerce/news', 'News');?></li>
             <li><?php echo anchor('ecommerce/forum', 'Forum');?></li>
-            <li><?php echo anchor('ecommerce/caratransaksi', 'Cara Transaksi', array('class'=>'selected'));?></li>
+            <li><?php echo anchor('ecommerce/caratransaksi', 'How To Order', array('class'=>'selected'));?></li>
             <li><?php echo anchor('ecommerce/contact', 'Contact Us');?></li>
 			<li><?php echo anchor('ecommerce/admin', 'Admin');?></li>
         </ul>
