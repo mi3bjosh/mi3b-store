@@ -97,21 +97,21 @@ ddsmoothmenu.init({
             	<img src="<?=base_url();?>style/images/product/01.jpg" alt="Product 01" />
                 <h3>Ut eu feugiat</h3>
                 <p class="product_price">$ 100</p>
-                <?php echo anchor('ecommerce/cart','Add to Cart',array('title'=>'Cart','class'=>'add_to_cart'));?>
+                <?php echo anchor('ecommerce/cart',' ',array('title'=>'Cart','class'=>'add_to_cart'));?>
 				<?php echo anchor('ecommerce/detail','Detail',array('title'=>'Detail','class'=>'detail'));?>
             </div>        	
             <div class="col col_14 product_gallery">
             	<img src="<?=base_url();?>style/images/product/02.jpg" alt="Product 02" />
                 <h3>Curabitur et turpis</h3>
                 <p class="product_price">$ 200</p>
-                <?php echo anchor('ecommerce/cart','Add to Cart',array('title'=>'Cart','class'=>'add_to_cart'));?>
+                <?php echo anchor('ecommerce/cart',' ',array('title'=>'Cart','class'=>'add_to_cart'));?>
 				<?php echo anchor('ecommerce/detail','Detail',array('title'=>'Detail','class'=>'detail'));?>
             </div>        	
             <div class="col col_14 product_gallery no_margin_right">
             	<img src="<?=base_url();?>style/images/product/03.jpg" alt="Product 03" />
                 <h3>Mauris consectetur</h3>
                 <p class="product_price">$ 120</p>
-                <?php echo anchor('ecommerce/cart','Add to Cart',array('title'=>'Cart','class'=>'add_to_cart'));?>
+                <?php echo anchor('ecommerce/cart',' ',array('title'=>'Cart','class'=>'add_to_cart'));?>
 				<?php echo anchor('ecommerce/detail','Detail',array('title'=>'Detail','class'=>'detail'));?>
             </div>
             <a href="#" class="more float_r">View all</a>
