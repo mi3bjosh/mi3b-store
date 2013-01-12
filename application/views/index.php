@@ -127,7 +127,7 @@ ddsmoothmenu.init({
             	<img src="<?=base_url().$row->gambar;?>" width="150" height="100"/>
                 <h3><?=$row->nama_produk;?></h3>
                 <p class="product_price"><?=$row->harga;?></p>
-                <?php echo anchor('ecommerce/cart','Add to Cart',array('title'=>'Cart','class'=>'add_to_cart'));?>
+                <?php echo anchor('ecommerce/cart',' ',array('title'=>'Cart','class'=>'add_to_cart'));?>
 				<?php echo anchor('ecommerce/detail','Detail',array('title'=>'Detail','class'=>'detail'));?>
                </div>  
                 <?php endforeach; ?>
@@ -140,7 +140,7 @@ ddsmoothmenu.init({
             	<img src="<?=base_url().$row->gambar;?>" width="150" height="100"/>
                 <h3><?=$row->nama_produk;?></h3>
                 <p class="product_price"><?=$row->harga;?></p>
-                <?php echo anchor('ecommerce/cart2','Add to Cart',array('title'=>'Cart','class'=>'add_to_cart'));?>
+                <?php echo anchor('ecommerce/cart2',' ',array('title'=>'Cart','class'=>'add_to_cart'));?>
 				<?php echo anchor('ecommerce/detail2','Detail',array('title'=>'Detail','class'=>'detail'));?>
                </div>  
                 <?php endforeach; ?>
