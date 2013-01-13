@@ -20,11 +20,7 @@
 					<li><a href="#">Sharp</a></li>
 				</ul>
 				</div>
-				<h3>Cart</h3>
-				<center>Terdapat<br> 2 <br>Barang dalam Shopping Cart
-				<br><br>
-				<?php echo anchor('ecommerce/cart','Lihat Cart',array('title'=>'Cart','class'=>'add_to_cart'));?>
-				</center>
+				
 			
             
         </div> <!-- END of sidebar -->
