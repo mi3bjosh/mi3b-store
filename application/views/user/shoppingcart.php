@@ -48,7 +48,7 @@ function clearText(field)
             <li><?php echo anchor('ecommerce/produk', 'Produk' , array('class'=>'selected'));?></li>
             <li><?php echo anchor('ecommerce/news', 'News');?></li>
             <li><?php echo anchor('ecommerce/forum', 'Forum');?></li>
-            <li><?php echo anchor('ecommerce/caratransaksi', 'Cara Transaksi');?></li>
+            <li><?php echo anchor('ecommerce/caratransaksi', 'How To Order');?></li>
             <li><?php echo anchor('ecommerce/contact', 'Contact Us');?></li>
 			<li><?php echo anchor('ecommerce/admin', 'Admin');?></li>
         </ul>
