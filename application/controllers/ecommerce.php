@@ -128,6 +128,30 @@ class Ecommerce extends CI_Controller {
 		echo $this->email->print_debugger();
 	}
 	
+	function member_product(){
+	$this->load->view('user/member_product');
+	}
+	function member_index(){
+	$this->load->view('user/member_area');
+	}
+	function member_news(){
+	$this->load->view('user/member_news');
+	}
+	function member_forum(){
+	$this->load->view('user/member_forum');
+	}
+	function member_transaksi(){
+	$this->load->view('user/member_transaksi');
+	}
+	function member_contact(){
+	$this->load->view('user/member_contact');
+	}
+	function member_detail(){
+	$this->load->view('user/member_detail');
+	}
+	function member_cart(){
+	$this->load->view('user/member_cart');
+	}
 }
 
 ?>
